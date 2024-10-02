@@ -1,0 +1,719 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #f4f4f4;
+  width: 1366px;
+  height: 768px;
+  margin: 0px;
+}
+
+.bg-img {
+  background-image: url("../public/img/loginbg.jpeg");
+  height: 472px;
+  width: 1366px;
+  border-radius: 0 0 0 87px;
+  background: linear-gradient(274.88deg, #0474da 0%, #044e92 100%);
+}
+.login-logo {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  top: 77px;
+  left: 0;
+  bottom: 0;
+  margin-left: auto;
+  text-align: center;
+  /* justify-content: center; */
+  width: 100%;
+}
+.heading {
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  top: 179px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.loginbox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  margin-left: 557px;
+  top: 0px;
+  top: 177px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.heading h6 {
+  color: #f4f4f4;
+  font-weight: 300;
+  font-size: 16px;
+}
+.form {
+  /* z-index: 2; */
+  height: 422px;
+  width: 410px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+}
+
+.form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 167px;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #3f3f3f;
+}
+.form label {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #9ca4ab;
+  font-family: "Open Sans", sans-serif;
+}
+.form input {
+  box-sizing: border-box;
+  height: 48px;
+  width: 337px;
+  border: 1px solid #979797;
+  border-radius: 6px;
+  padding: 10px;
+}
+.for-pass {
+  float: right;
+  color: rgb(14, 147, 196);
+  font-weight: 500;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 12px;
+}
+.login-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+  height: 36px;
+  width: 130px;
+  /* margin-left: 150px; */
+}
+.eye {
+  height: 14.92px;
+  width: 24px;
+  background-color: #5a5b5b;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: absolute;
+  margin-left: 297px;
+}
+.email-val {
+  color: #ff3838;
+  /* font-family: "Nunito Sans Regular"; */
+  font-size: 15px;
+  /* letter-spacing: 0;
+  line-height: 19px; */
+  margin-left: 20px;
+  display: flex;
+  margin-top: 0px;
+}
+/* login mobileView */
+@media (max-width: 768px) {
+  .bg-img {
+    background-image: url("../public/img/login-bg-mb.png");
+    height: 300px;
+    width: 360px;
+    padding: 0px;
+  }
+  .loginbox {
+    position: static;
+    margin-left: 0px;
+  }
+  .form {
+    box-sizing: border-box;
+    height: 300px;
+    width: 360px;
+    border-radius: 0px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    /* margin-right: 37px; */
+  }
+  .form input {
+    box-sizing: border-box;
+    height: 48px;
+    width: 328px;
+
+    /* padding: 10px; */
+  }
+  form p {
+    height: 27px;
+    width: 176px;
+    color: #3f3f3f;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-left: 10px;
+  }
+  .login-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 328px;
+  }
+}
+
+/* dashboard */
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  height: 768px;
+  width: 58px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.dashboard-logo {
+  height: 20px;
+  width: 25px;
+  margin-right: 27px;
+}
+.add-logo {
+  height: 20px;
+  width: 25px;
+  margin-right: 27px;
+}
+.list-logo {
+  height: 20px;
+  width: 25px;
+  margin-right: 27px;
+}
+
+.dash-header {
+  background-image: url("../public/img/dashboard-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 1308px;
+  display: flex;
+}
+.dash-header span {
+  color: white;
+  margin-bottom:27px;
+  font-size:20px;
+  display: flex;
+  width: 177px;
+  align-items: center; 
+   justify-content: space-between;
+  margin-left: 20px;
+ 
+}
+
+.dash-header .arrow{
+  width: 17px;
+  margin-top: 3px;
+  
+}
+.dash-logo {
+  margin-bottom: 40px;
+  margin-left: 377px;
+  height: 53px;
+  width: 60px;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  bottom: 45px;
+}
+
+.card-r {
+  height: 100px;
+  width: 238px;
+  bottom: 45px;
+}
+
+.card-body {
+  display: block;
+}
+
+.rec {
+  height: 95px;
+  width: 9px;
+  background-color: #0cc9e8;
+}
+.total-num {
+  color: #474d52;
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 54px;
+}
+
+.pro-title {
+  color: #474d52;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+/* dashboard mobileView */
+
+@media (max-width: 768px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .dash-header {
+    height: 55px;
+    width: 360px;
+  }
+  .dash-header span {
+    color: white;
+    margin-bottom:27px;
+    font-size:17px;
+    display: flex;
+    width: 150px;
+    align-items: center; 
+    margin-top: 20px;
+  }
+
+  .pro-title {
+    color: #474d52;
+    font-family: "Nunito Sans Normal";
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .total-num {
+    color: #474d52;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+  .dash-logo {
+    display: none;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card-d {
+    height: 75px;
+    width: 100px;
+  }
+  .card-r {
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    height: 100px;
+    width: 100px;
+    bottom: 45px;
+  }
+ 
+  .sidebar ul {
+    height: 56px;
+    width: 390px;
+    border-radius: 30px 30px 0 0;
+    background-color: #ffffff;
+    box-shadow: 0 3px 11px 0 rgba(2, 118, 179, 0.24);
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+
+    margin-left: 370px;
+  }
+  .sidebar li img {
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+    margin: 37px;
+  }
+}
+
+/* Form */
+
+/* Project Create */
+
+.projectcreate {
+  display: flex;
+  flex-direction: row;
+}
+.project-form {
+  display: flex;
+  flex-direction: row;
+  height: 796px;
+  width: 1268px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+  margin-top: 10px;
+  margin-left: 0px;
+}
+.form-text {
+  display: flex;
+}
+.form-text input {
+  box-sizing: border-box;
+  height: 70px;
+  width: 714px;
+  border: 1px solid #979797;
+  border-radius: 6px;
+  padding: 20px;
+}
+.form-text button {
+  width: 170px;
+  border-radius: 50px;
+}
+
+.form-select {
+  box-sizing: border-box;
+  height: 48px;
+  width: 377px;
+  border: 1px solid #979797;
+  border-radius: 6px;
+}
+
+.status-registered {
+  height: 22px;
+  width: 127px;
+  color: #3f3f3f;
+  font-family: "Nunito Sans bold";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.arrow {
+  margin-right: 20px;
+}
+label {
+  color: #767676;
+}
+.form-butt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+/* Form mobileView */
+@media screen and (max-width: 768px) {
+  .projectcreate {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .project-form {
+    margin-top: 50px;
+    height: 1013px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+  }
+  .form-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-text input {
+    box-sizing: border-box;
+    height: 70px;
+    margin-right: 10px;
+    width: 280px;
+    border: 1px solid #979797;
+    border-radius: 6px;
+  }
+  .form-butt {
+    margin-left: 10px;
+  }
+  .dash-header p {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 17px;
+
+    margin-top: 10px;
+  }
+  /* .dash-header {
+    height: 55px;
+    width: 360px;
+  } */
+}
+/* table */
+.project-list {
+  display: flex;
+  flex-direction: row;
+}
+.pname{
+  /* height: 22px; */
+  width: 81px;
+  color: #414950;
+  /* font-family: "Nunito Sans"; */
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.44px;
+  /* line-height: 22px; */
+}
+.p-date {
+  height: 19px;
+  width: 187px;
+  color: #6B6B6B;
+  /* font-family: "Nunito Sans"; */
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+table tr {
+  box-sizing: border-box;
+  height: 1px;
+  width: 1276px;
+  border-bottom: 1px solid #e0e0e0;
+}
+table thead th {
+  height: 40px;
+  width: 1276px;
+  background-color: #ebf5ff;
+  color: #3f3f3f;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+tr th {
+  color: #414950;
+  font-size: 16px;
+  /* font-weight: bold; */
+}
+tr td {
+  color: #3f3f3f;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-top: 0px;
+}
+.search {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(165, 160, 160);
+  width: 100%;
+  font-size: 17px;
+}
+.list-box {
+  padding: 10px;
+  margin-left: 10px;
+}
+.pagin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropbtn {
+  color: black;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  /* padding: 10x; */
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown-content p:hover {
+  background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #aaaaaa;
+}
+@media screen and (max-width: 768px) {
+  table {
+    border: none;
+    padding: 40px;
+  }
+  .sidebar {
+    width: 0;
+    height: 0;
+  }
+  .list-box {
+    box-shadow: none;
+    border: none;
+    background-color: #f4f4f4;
+  }
+
+  thead th {
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  table tr td {
+    display: inline-table;
+    margin-right: 7px;
+    font-size: 14px;
+    /* width: 225px; */
+  }
+  table tr {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 257px;
+    width: 328px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+  }
+  .start {
+    height: 36px;
+    width: 88px;
+    border-radius: 18px;
+    background-color: #025aab;
+  }
+  .close {
+    height: 36px;
+    width: 88px;
+    margin: 10px;
+  }
+  .cancle {
+    height: 36px;
+    width: 88px;
+  }
+  .tbl-data {
+    height: 115px;
+    width: 225px;
+    margin-top: 0px;
+  }
+  .mb-sort form input {
+    background-color: #f4f4f4;
+    width: 100%;
+  }
+  .mb-sort label {
+    display: none;
+  }
+  .mb-sort select {
+    background-color: #f4f4f4;
+    width: 20px;
+    right: 0;
+  }
+}
+
+.chart {
+  height: 387px;
+  width: 635px;
+  border-radius: 10px;
+  padding-top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+}
+.chart-data {
+  box-sizing: border-box;
+  height: 303px;
+  width: 560px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+@media screen and (max-width: 768px) {
+  .chart {
+    height: 424px;
+    width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+  }
+  .chart-data {
+    /* box-sizing: border-box; */
+    /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    height: px;
+    margin-right: 40px;
+    padding: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+.err{
+  border: 1px solid red;
+}
